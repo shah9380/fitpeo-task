@@ -11,7 +11,7 @@ const Header = () => {
         miniNotify ? setMiniNotify(false) : setMiniNotify(true)
     }
   return (
-    <header className='bg-slate-900 p-4 flex gap-6 justify-between items-center sticky top-0 z-50'>
+    <header className='bg-slate-900 p-4 flex gap-6 justify-between items-center sticky top-0 z-20'>
         <Search></Search>
         <div className='flex justify-center items-center gap-8'>
             <div className='hidden md:flex justify-center items-center gap-4'>

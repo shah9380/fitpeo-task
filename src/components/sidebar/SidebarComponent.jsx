@@ -9,7 +9,7 @@ const SidebarComponent = () => {
   },[])
 
   return (
-    <aside className='bg-slate-900 flex flex-col justify-between py-2 pt-4 pb-10 w-fit h-[100svh] md:min-h-screen sticky top-0 left-0'>
+    <aside className={`bg-slate-900 flex flex-col justify-between py-2 pt-4 pb-10 w-fit h-[100vh] ${toggled ? "fixed z-50": "sticky"}  md:min-h-screen top-0 left-0`}>
       <div className='flex flex-col justify-center items-center gap-8'>
         <div className='px-6 py-1' onClick={()=>{toggled ? setToggled(false) : setToggled(true)}}><ApplicationBarIcon /></div>
         <ul className='flex flex-col gap-6'>
@@ -20,7 +20,7 @@ const SidebarComponent = () => {
           <li><div onClick={()=>{setSelected(5)}} className={`cursor-pointer flex justify-start items-center gap-6 pr-6 py-1 text-gray-400 ${selected === 5 ? "border-l-4 border-blue-400 pl-5 text-blue-400": "pl-6"} `}><FaSignOutAlt /><span className={toggled ? "" : "hidden"}>Dashboard</span></div></li>
         </ul>
       </div>
-      <div className='px-6 py-1 flex justify-center items-center text-blue-600'><FaSignOutAlt /></div>
+      <div className='px-6 py-1 flex justify-center items-center text-blue-600 mb-24'><FaSignOutAlt /></div>
     </aside>
   );
 }
