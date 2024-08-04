@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Search from '../classic/search/Search'
 import NavIcon from '../classic/profile/NavIcon'
-import { FaAd, FaAnchor, FaBell, FaCog, FaMailBulk } from 'react-icons/fa';
+import { FaAnchor, FaBell, FaCog, FaMailBulk } from 'react-icons/fa';
 import Img from '../classic/profile/Img';
 
 const Header = () => {
