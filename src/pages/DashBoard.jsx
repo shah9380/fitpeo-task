@@ -7,7 +7,7 @@ import RecentTable from '../components/classic/cards/RecentTable'
 
 const DashBoard = () => {
   return (
-    <div className='w-full md:w-screen text-white'>
+    <div className='w-full md:w-full text-white'>
       <div className='max-w-[1200px] p-2 mx-auto'>
         <h1 className='mb-8 text-xl'>Dashboard</h1>
         <div className='flex flex-wrap mb-6 gap-6 md:gap-8 md:grid grid-cols-3 grid-rows-6'>

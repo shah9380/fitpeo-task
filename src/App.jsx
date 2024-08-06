@@ -8,9 +8,9 @@ import DashBoard from './pages/DashBoard';
 function App() {
   return (
     <BrowserRouter>
-    <div className="App flex relative">
+    <div className="App flex relative w-screen">
       <SidebarComponent />
-      <div className="content max-h-screen overflow-y-auto">
+      <div className="content max-h-screen overflow-y-auto w-full">
         <Header />
         <Routes>
           <Route path='/' Component={DashBoard} />
