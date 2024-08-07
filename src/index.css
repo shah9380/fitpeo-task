@@ -15,7 +15,31 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Light gray background */
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa67; /* Gray color */
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Darker gray on hover */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar width */
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

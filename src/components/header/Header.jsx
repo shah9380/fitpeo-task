@@ -19,11 +19,11 @@ const Header = () => {
                 <NavIcon component={<FaAnchor />} hasUpdate={false}/>
                 <NavIcon component={<FaBell />} hasUpdate={true}/>
             </div>
-            <div className='relative bg-slate-900 block md:hidden'>
+            <div className='relative bg-[#1F2029] block md:hidden'>
                 <div onClick={hideNotifybar}>
                     <NavIcon component={<FaMailBulk />} hasUpdate={true}/>
                 </div>
-                <div onClick={hideNotifybar} className={`absolute bg-slate-900/85 px-2 pt-6 py-4 left-[-7px] flex flex-col transition-transform duration-300 ease-out justify-center items-center gap-4 ${miniNotify ? "translate-x-0" : 'translate-y-[-500px]' }`}>
+                <div onClick={hideNotifybar} className={`absolute bg-[#1F2029]/85 px-2 pt-6 py-4 left-[-7px] flex flex-col transition-transform duration-300 ease-out justify-center items-center gap-4 ${miniNotify ? "translate-x-0" : 'translate-y-[-500px]' }`}>
                     <NavIcon component={<FaCog />} hasUpdate={false}/>
                     <NavIcon component={<FaAnchor />} hasUpdate={false}/>
                     <NavIcon component={<FaBell />} hasUpdate={true}/>
